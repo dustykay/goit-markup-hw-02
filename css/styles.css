@@ -1,0 +1,161 @@
+/* Загальні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2E2F42;
+    background-color: #ffffff;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    height: 72px;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+/*Контенер */
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
+}
+
+/* Навігація */
+.nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2e2f42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+
+/* Контакти */
+.contacts-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-link {
+    text-decoration: none;
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms ease;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
+}
+
+/* Hero */
+.hero {
+background-color: #2e2f42;
+padding: 188px 0;
+text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    color: #ffffff;
+    max-width: 496px;
+    margin: 0 auto 48px;
+}
+
+.hero button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0,.15);
+}
+
+/* Features */
+.features {
+    padding: 120px 0;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-item {
+    width: 264;
+}
+
+.features-title {
+    color: #2e2f42;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.features-text {
+    color: #434455;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Команда */
+.team {
+    background-color: #f4f4fd;
+    padding: 120px 0;
+}
+
+.team-title {
+    color: #2e2f42;
+    font-size: 36px;
+    
+}
