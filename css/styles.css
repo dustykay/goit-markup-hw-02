@@ -163,18 +163,26 @@ text-align: center;
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
     justify-content: center;
-    list-style: none;
+    gap: 24px;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .team-card {
-    width: calc((100%-72px) / 4);
+    width: 264px;
     background-color: #ffffff;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.team-title, 
+.portfolio-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Portfolio */
@@ -194,7 +202,8 @@ text-align: center;
 }
 
 .portfolio-list {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     list-style: none;
