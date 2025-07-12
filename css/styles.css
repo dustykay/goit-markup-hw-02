@@ -1,33 +1,27 @@
 /* Загальні стилі */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
 }
 
 /* Header */
-.header {
+.page-header {
     background-color: #ffffff;
-    height: 72px;
-    border-bottom: 1px solid #e7e9fc;
 }
 
 /*Контенер */
 .container {
-    max-width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 /* Логотип */
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -43,11 +37,8 @@ body {
 
 /* Навігація */
 .nav-list {
-    display: flex;
-    gap: 40px;
     list-style: none;
     margin: 0;
-    padding: 0;
 }
 
 .nav-link {
@@ -57,7 +48,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    transition: color 250ms ease;
 }
 
 .nav-link:hover,
@@ -67,14 +57,15 @@ body {
 
 /* Контакти */
 .contacts-list {
-    display: flex;
-    gap: 40px;
     list-style: none;
     margin: 0;
-    padding: 0;
 }
 
 .address {
+    font-style: normal;
+}
+
+.header-contacts {
     font-style: normal;
 }
 
@@ -85,7 +76,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    transition: color 250ms ease;
 }
 
 .contacts-link:hover,
@@ -96,22 +86,20 @@ body {
 /* Hero */
 .hero {
 background-color: #2e2f42;
-padding: 188px 0;
 text-align: center;
 }
 
-.hero h1 {
-    font-family: 'Roboto', sans-serif;
+.hero-title {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     color: #ffffff;
-    max-width: 496px;
-    margin: 0 auto 48px;
+    text-align: center;
 }
 
-.hero button {
-    font-family: 'Roboto', sans-serif;
+.hero-btn {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -120,30 +108,14 @@ text-align: center;
     background-color: #4d5ae5;
     cursor: pointer;
     border: none;
-    border-radius: 4px;
-    padding: 16px 32px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0,.15);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: #404bbf;
 }
 
 /* Features */
-.features {
-    padding: 120px 0;
-}
-
-.features-container {
-    display: flex;
-    justify-content: center;
-}
-
-.features-list {
-    display: flex;
-    gap: 24px;
-}
-
-.features-item {
-    width: 264;
-}
-
 .features-title {
     color: #2e2f42;
     font-weight: 700;
@@ -163,49 +135,60 @@ text-align: center;
 /* Команда */
 .team {
     background-color: #f4f4fd;
-    padding: 120px 0;
 }
 
 .team-title {
+    font-family: "Roboto", sans-serif;
     color: #2e2f42;
     font-size: 36px;
+    line-height: 1.11;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 72px;
 }
 
-.team-title, 
-.portfolio-title {
+.team-list {
+    list-style: none;
+    margin: 0;
+}
+
+.team-card {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
     text-align: center;
+}
+
+.member-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 32px 0 8px 0;
+}
+
+.member-position {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin: 0;
+}
+
+.container {
+    max-width: 1158px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.team-card {
-    width: 264px;
-    background-color: #ffffff;
-    text-align: center;
-    border-radius: 0 0 4px 4px;
-}
-
 /* Portfolio */
 .portfolio {
-    padding: 120px 0;
-    background-color: #fff;
+    background-color: #f4f4fd;
 }
 
 .portfolio-title {
     color: #2e2f42;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -214,81 +197,75 @@ text-align: center;
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
     list-style: none;
-    padding: 0;
     margin: 0;
 }
 
 .portfolio-item {
-    width: 360px;
     background-color: #ffffff;
     border: 1px solid #e7e9fc;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 24px;
+
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-list::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .portfolio-item img {
     display: block;
-    width: 100%;
-    height: auto;
+    max-width: 100%;
 }
 
 .portfolio-subtitle {
     color: #2e2f42;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     margin: 32px 16px 8px 16px;
 }
 
 .portfolio-text {
     color: #434455;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     margin: 0 16px 32px 16px;
 }
 
 /* Footer */
 .footer {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.footer-container {
-    width: 100%;
-    max-width: 1158px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .footer-logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
-    display: inline-block;
-    margin-bottom: 16px;
+    text-decoration: none;
 }
 
-.footer-logo .accent {
+.logo-accent {
     color: #4d5ae5;
 }
 
 .footer-text {
-    max-width: 264px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
