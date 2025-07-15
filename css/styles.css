@@ -5,19 +5,6 @@ body {
 }
 
 /* region header */
-.header {
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.header-navigation {
-    display: flex;
-}
-
-.navigation-list {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     font-family: "Ralewey", sans-serif;
     font-weight: 700;
@@ -53,13 +40,6 @@ body {
     font-style: normal;
 }
 
-.address-list {
-    display: flex;
-    gap: 40px;
-    padding: 24px 0;
-    list-style: none
-}
-
 .address-link {
     font-size: 16px;
     line-height: 1.5;
@@ -75,7 +55,6 @@ body {
 /* region hero */
 .hero {
     background-color: #2E2F42;
-    padding: 188px 0;
 }
 
 .hero-title {
@@ -99,7 +78,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-    color: #404bbf;
+    color: #404BBF;
 }
 
 /* Features */
@@ -169,7 +148,7 @@ body {
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
