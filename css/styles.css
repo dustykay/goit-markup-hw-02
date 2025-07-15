@@ -114,12 +114,6 @@
     padding: 120px 0;
 }
 
-.visuallu-hiden {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .features-list {
     display: flex;
     gap: 24px;
