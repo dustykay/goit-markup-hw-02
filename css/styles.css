@@ -4,20 +4,18 @@
     background-color: #FFFFFF;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
 /* region header */
 .header {
-    width: 1440px;
-    height: 72px;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-navigation {
+    display: flex;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -30,6 +28,7 @@ p {
     text-transform: uppercase;
     text-decoration: none;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-dark {
@@ -41,13 +40,9 @@ p {
 }
 
 .nav-list {
-    width: 261px;
-    height: 24px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
     gap: 40px;
+    margin-right: 332px;
 }
 
 .nav-link {
@@ -58,58 +53,71 @@ p {
     color: #2e2f42;
 }
 
+.address {
+    font-style: normal;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+}
+
 .address-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: #434455;
 }
 
 /* region hero */
 .hero {
-    background-color: #2e2f42;
-    width: 1440px;
-    height: 600px;
+    background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 .hero-title {
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .hero-button {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 10px;
-    border-radius: 4px;
-    padding: 16px 32px;
-    width: 169px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
     height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
 }
 
 /* Features */
 .section-features {
-    width: 1128px;
-    height: 104px;
+    padding: 120px 0;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
 }
 
 .features-item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
-    width: 264px;
-    height: 104px;
+    width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
@@ -118,6 +126,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .features-text {
@@ -130,32 +139,29 @@ p {
 
 /* Team */
 .section-team {
-    width: 1440px;
-    height: 732px;
-    background: #f4f4fd;
+    background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-title {
-    font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #2e2f42;
+    color: #2E2F42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    flex-direction: column;
-    border-radius: 0 0 4px 4px;
-    width: 264px;
-    padding: 0px 0px 32px 0px;
-    height: 380px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px
 }
 
 .team-item-about {
@@ -183,8 +189,8 @@ p {
 
 /* Portfolio */
 .section-portfolio {
-    width: 1128px;
-    height: 1000px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .container {
@@ -228,6 +234,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -238,6 +245,7 @@ p {
     color: #434455;
 }
 
+/* Footer */
 .footer {
     padding: 100px 0;
     background: #2e2f42;
@@ -250,4 +258,14 @@ p {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
